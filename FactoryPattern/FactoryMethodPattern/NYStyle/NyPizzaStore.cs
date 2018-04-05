@@ -1,6 +1,6 @@
 ﻿namespace FactoryMethodPattern
 {
-    public class NyPizzaStore : PizzaStore
+    public class NYPizzaStore : PizzaStore
     {
         public override Pizza CreatePizza(string type)
         {

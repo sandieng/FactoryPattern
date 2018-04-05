@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5C3A70E5-7D91-42B8-B3E7-CB5199487EFE}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FactoryMethodPattern</RootNamespace>
-    <AssemblyName>FactoryMethodPattern</AssemblyName>
+    <ProjectGuid>{8BD814EF-73AD-4BA6-8992-C45EE1CF74CD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AbstractFactoryClient</RootNamespace>
+    <AssemblyName>AbstractFactoryClient</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,17 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChicagoStyle\ChicagoCheesePizza.cs" />
-    <Compile Include="ChicagoStyle\ChicagoClamPizza.cs" />
-    <Compile Include="ChicagoStyle\ChicagoPizzaStore.cs" />
-    <Compile Include="ChicagoStyle\ChicagoVeggiePizza.cs" />
-    <Compile Include="NYStyle\NYClamPizza.cs" />
-    <Compile Include="NYStyle\NYPizzaStore.cs" />
-    <Compile Include="NYStyle\NYCheesePizza.cs" />
-    <Compile Include="NYStyle\NYVeggiePizza.cs" />
-    <Compile Include="Pizza.cs" />
-    <Compile Include="PizzaStore.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbstractFactoryPattern\AbstractFactoryPattern.csproj">
+      <Project>{deadc0be-496b-4c95-9cd9-05111bba582a}</Project>
+      <Name>AbstractFactoryPattern</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

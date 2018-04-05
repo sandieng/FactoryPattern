@@ -8,7 +8,7 @@ namespace FactoryMethodClient
     {
         static void Main(string[] args)
         {
-            PizzaStore nyStore = new NyPizzaStore();
+            PizzaStore nyStore = new NYPizzaStore();
             var cheesePizza = nyStore.OrderPizza("cheese");            
             Console.WriteLine($"Pizza name: {cheesePizza.Name}, dough: {cheesePizza.Dough}, sauce: {cheesePizza.Sauce}");
 
