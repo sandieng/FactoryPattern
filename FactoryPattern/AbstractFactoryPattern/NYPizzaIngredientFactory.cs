@@ -4,7 +4,7 @@ using AbstractFactoryPattern.ConcreteIngredients;
 
 namespace AbstractFactoryPattern
 {
-    public class NYPizzaIngredientFactory : PizzaIngredientsFactory
+    public class NYPizzaIngredientFactory : IPizzaIngredientsFactory
     {
         public Dough MakeDough()
         {

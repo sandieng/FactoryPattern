@@ -6,7 +6,7 @@ namespace AbstractFactoryPattern
     {
         public override Pizza CreatePizza(string type)
         {
-            PizzaIngredientsFactory ingredientsFactory = new NYPizzaIngredientFactory();
+            IPizzaIngredientsFactory ingredientsFactory = new NYPizzaIngredientFactory();
 
             switch (type)
             {

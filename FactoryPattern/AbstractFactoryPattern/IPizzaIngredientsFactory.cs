@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace AbstractFactoryPattern
 {
-    public interface PizzaIngredientsFactory
+    public interface IPizzaIngredientsFactory
     {
         Dough MakeDough();
         Sauce MakeSauce();

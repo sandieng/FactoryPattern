@@ -67,7 +67,7 @@
     <Compile Include="NYPizzaIngredientFactory.cs" />
     <Compile Include="NYPizzaStore.cs" />
     <Compile Include="Pizza.cs" />
-    <Compile Include="PizzaIngredientsFactory.cs" />
+    <Compile Include="IPizzaIngredientsFactory.cs" />
     <Compile Include="PizzaStore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

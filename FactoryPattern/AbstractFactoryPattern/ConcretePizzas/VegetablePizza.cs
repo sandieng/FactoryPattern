@@ -4,9 +4,9 @@ namespace AbstractFactoryPattern.ConcretePizzas
 {
     public class VegetablePizza : Pizza
     {
-        private readonly PizzaIngredientsFactory _ingredientsFactory;
+        private readonly IPizzaIngredientsFactory _ingredientsFactory;
 
-        public VegetablePizza(PizzaIngredientsFactory ingredientsFactory)
+        public VegetablePizza(IPizzaIngredientsFactory ingredientsFactory)
         {
             _ingredientsFactory = ingredientsFactory;
             Name = "Vegetable Pizza";
